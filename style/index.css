@@ -21,6 +21,10 @@ body{
     width: 100%;
 }
 
+#page1{
+    margin-bottom: 30px;
+}
+
 #cover-date{
     font-family: 'Roboto Condensed', sans-serif;
     width: fit-content;
@@ -113,4 +117,3 @@ body{
     left: 54%;
     height: 625px;
 }
-

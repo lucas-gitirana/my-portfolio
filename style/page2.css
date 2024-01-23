@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600;9..40,800&display=swap');
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+.page-number{
+    color: rgba(255, 222, 0, 1);
+    font-size: 50px;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.logo-mark{
+    height: 60px;
+}
+
+.about-me-title{
+    color: rgba(255, 222, 0, 1);
+    font-family: 'DM Sans', sans-serif;
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.about-me-title h2{
+    margin: 0;
+    font-size: 135px;
+    display: flex;
+    line-height: 0.79;
+}
