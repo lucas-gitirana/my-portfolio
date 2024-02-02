@@ -1,33 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600;9..40,800&display=swap');
 
-.page-header{
+.page__header .dev_logo{
+    height: 2em;
+}
+
+.page__header .page__header__number{
+    font-size: 2em;
+    color: rgba(255, 222, 0, 1);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.page__content{
     display: flex;
     justify-content: space-between;
-    padding: 20px 35px;
+    align-items: center;
+    padding: 20px;
 }
 
-.page-number{
-    color: rgba(255, 222, 0, 1);
-    font-size: 50px;
-    margin: 0;
-    font-family: 'DM Sans', sans-serif;
-}
-
-.logo-mark{
-    height: 60px;
-}
-
-.about-me-title{
-    color: rgba(255, 222, 0, 1);
-    font-family: 'DM Sans', sans-serif;
-    width: 50%;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.about-me-title h2{
-    margin: 0;
-    font-size: 135px;
+.page__content .presentation{
     display: flex;
-    line-height: 0.79;
+    flex-direction: column;
+}
+
+.page__content .presentation .presentation__title{
+    display: flex;
+    padding-bottom: 25px;
+    width: 495px;
+}
+
+.page__content .presentation .presentation__title span{
+    font-size: 8em;
+    color: rgba(255, 222, 0, 1);
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 0.8;
 }
