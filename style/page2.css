@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600;9..40,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 .page__header .dev_logo{
     height: 2em;
@@ -12,26 +14,111 @@
 
 .page__content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
+    height: 100%;
 }
 
 .page__content .presentation{
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
 }
 
 .page__content .presentation .presentation__title{
     display: flex;
-    padding-bottom: 25px;
     width: 495px;
 }
 
 .page__content .presentation .presentation__title span{
-    font-size: 8em;
+    font-size: 10em;
     color: rgba(255, 222, 0, 1);
     font-weight: 600;
     font-family: 'DM Sans', sans-serif;
     line-height: 0.8;
+}
+
+.page__content .presentation .presentation__links{
+    margin: 10px 0px 0px 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page__content .presentation .presentation__links a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.page__content .presentation .presentation__links a:hover{
+    text-decoration: underline;
+}
+
+.explanation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.explanation .explanation__answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.explanation .explanation__answer .explanation__answer__text{
+    font-family: 'Figtree', sans-serif;
+    color: #fff;
+    font-size: 3em;
+    text-align: end;
+    width: 550px;
+}
+
+.explanation .explanation__answer .explanation__answer__text strong{
+    font-weight: 900;
+    color: rgba(255, 222, 0, 1);;
+}
+
+.explanation .explanation__answer .explanation__answer__contents{
+    padding: 20px 0px;
+}
+
+.explanation .explanation__answer .explanation__answer__contents button{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.explanation .explanation__answer .explanation__answer__contents button:hover{
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.explanation .explanation__answer .explanation__answer__contents .my-cv{
+    background-color: rgba(255, 222, 0, 1);
+}
+
+.explanation .explanation__answer .explanation__answer__contents button span{
+    margin-right: 5px;
+}
+
+.explanation .explanation__local{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.explanation .explanation__local img{
+    margin-left: 5px;
 }

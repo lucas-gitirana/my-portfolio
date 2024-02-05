@@ -5,10 +5,16 @@
 /* ------------- ANIMATIONS ------------- */
 @keyframes pageCoverAnimation {
     50% {
-        transform: rotate(-4deg);
+        transform: rotate(-0.4deg);
     }
     90% {
-        transform: rotate(2deg);
+        transform: rotate(1deg);
+    }
+}
+
+@keyframes labelCoverAnimation {
+    0% {
+        color: rgba(255, 222, 0, 1);
     }
 }
 
@@ -52,7 +58,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: pageCoverAnimation 5s infinite;
+    margin-top: 10px;
+    animation: pageCoverAnimation 4s infinite;
 }
 
 .page__cover img{
@@ -76,15 +83,17 @@
 .cover-label span{
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 900;
-    color: #fff;
 }
 
 .cover-label .cover-label__title{
     font-size: 3em;
     font-style: italic;
     letter-spacing: 0.1em;
+    animation: labelCoverAnimation 1s infinite;
+    color: #fff;
 }
 
 .cover-label .cover-label__subtitle{
     font-size: 1.5em;
+    color: #fff;
 }
