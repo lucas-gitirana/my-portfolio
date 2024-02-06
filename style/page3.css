@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600;9..40,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.content-cv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+.cv .cv__title{
+    font-size: 6em;
+    color: rgba(255, 222, 0, 1);
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 0.8;
+}
+
+.cv .cv__description{
+    display: flex;
+    font-size: 1.2em;
+    padding: 25px 10px 0px 0px;
+    color: #fff;
+    overflow: auto;
+}
+
+.cv .cv__description li{
+    margin-bottom: 5px;
+}
+
+.cv .cv__description ul{
+    margin-bottom: 30px;
+}
+
+.cv .cv__description .cv__description__periods{
+    font-family: 'DM Sans', sans-serif;
+    margin-right: 80px;
+}
+
+.cv .cv__description .cv__description__jobs{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.technologies{
+    background-color: rgba(255, 115, 115, 1);
+    width: 100%;
+}
+
+.technologies .slider-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.technologies .slider-container .slider-content .slider-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologies .slider-container .slider-content{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow: auto;
+}
+
+.technologies .slider-container .slider-content .slider-card{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: end;
+}
+
+.technologies .slider-container .slider-content .slider-card .slider-card__description{
+    margin-top: 5px;
+}
+
+.technologies .slider-container .slider-content .slider-card span{
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
