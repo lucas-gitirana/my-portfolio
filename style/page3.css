@@ -69,20 +69,28 @@
 
 .technologies .slider-container .slider-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .technologies .slider-container .slider-content .slider-card{
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    align-items: center;
     justify-content: end;
+    margin: 0px 10px;
+    padding: 8px;
 }
 
 .technologies .slider-container .slider-content .slider-card .slider-card__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 5px;
+    width: max-content;
 }
 
 .technologies .slider-container .slider-content .slider-card span{
