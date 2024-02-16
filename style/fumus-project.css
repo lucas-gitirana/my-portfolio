@@ -91,6 +91,11 @@ body{
     margin-top: 50px;
 }
 
+.project-page .project-page__content .project-description .project-description__action a{
+    text-decoration: none;
+    color: black;
+}
+
 .project-page .project-page__content .project-description .project-description__action button{
     border: none;
     border-radius: 500px;
@@ -98,11 +103,6 @@ body{
     padding: 10px 20px;
     font-size: 1.2em;
     font-weight: 600;
-}
-
-.project-page .project-page__content .project-description .project-description__action a{
-    text-decoration: none;
-    color: black;
 }
 
 .project-page .project-page__content .project-description .project-description__action .download{
