@@ -60,6 +60,30 @@
     padding: 10px 0px;
 }
 
+.technologies .slider-container .slider-button-left, .technologies .slider-container .slider-button-right{
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+
+.technologies .slider-container button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.technologies .slider-container button i{
+    font-size: 3.5em;
+    color: rgba(255, 222, 0, 1);
+}
+
+
+.technologies .slider-container button i:hover{
+    color: rgb(251, 82, 82);
+}
+
 .technologies .slider-container .slider-content .slider-card{
     display: flex;
     flex-direction: column;

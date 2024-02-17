@@ -62,6 +62,21 @@
     align-items: center;
 }
 
+.page .projects-container button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.page .projects-container button i{
+    font-size: 3.5em;
+    color: rgba(255, 222, 0, 1);
+}
+
+.page .projects-container button i:hover{
+    color: rgb(255, 232, 232);
+}
+
 .page .projects-container .projects-container__content{
     display: flex;
     overflow: auto;
@@ -81,6 +96,10 @@
     overflow: hidden;
     margin-left: 70px;
     min-width: 300px;
+}
+
+.page .projects-container .projects-container__content .project-card:hover{
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .page .projects-container .projects-container__content > :first-child{
