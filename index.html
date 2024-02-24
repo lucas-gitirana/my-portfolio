@@ -158,7 +158,8 @@
                                 </button>
                             </div>
 
-                            <div class="slider-content" id="technologies-images">
+                            <div class="slider-content-container">
+                                <div class="slider-content" id="technologies-images">
 
                                 <div class="slider-card">
                                     <div class="slider-card__picture">
@@ -268,43 +269,9 @@
                                     </div>
                                 </div>
 
-                                <div class="slider-card">
-                                    <div class="slider-card__picture">
-                                        <img src="assets/img/android-studio-logo.svg" alt="">
-                                    </div>
-                                    <div class="slider-card__description">
-                                        <span>Android Studio</span>
-                                    </div>
-                                </div>
-
-                                <div class="slider-card">
-                                    <div class="slider-card__picture">
-                                        <img src="assets/img/android-studio-logo.svg" alt="">
-                                    </div>
-                                    <div class="slider-card__description">
-                                        <span>Android Studio</span>
-                                    </div>
-                                </div>
-
-                                <div class="slider-card">
-                                    <div class="slider-card__picture">
-                                        <img src="assets/img/android-studio-logo.svg" alt="">
-                                    </div>
-                                    <div class="slider-card__description">
-                                        <span>Android Studio</span>
-                                    </div>
-                                </div>
-
-                                <div class="slider-card">
-                                    <div class="slider-card__picture">
-                                        <img src="assets/img/android-studio-logo.svg" alt="">
-                                    </div>
-                                    <div class="slider-card__description">
-                                        <span>Android Studio</span>
-                                    </div>
-                                </div>
-
                             </div>
+                            </div>
+
 
                             <div class="slider-button-right">
                                 <button id="next-technology">
@@ -412,8 +379,24 @@
 
 <script>
 
-    //Technologies carrossel
+    let hiddenElements = 0;
 
+    document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector('.slider-content');
+        const items = document.querySelectorAll('.slider-card');
+
+        items.forEach(function (item) {
+            const itemRect = item.getBoundingClientRect();
+            const containerRect = container.getBoundingClientRect();
+
+            if (itemRect.left >= containerRect.right) {
+                hiddenElements++;
+            }
+        });
+    });
+
+
+    //Technologies carousel
     const carrossel = document.getElementById('technologies-carrossel');
     const images = document.getElementById('technologies-images');
     const nextTech = document.getElementById('next-technology');
@@ -423,8 +406,6 @@
 
     previousTech.addEventListener('click', () => {
 
-        console.log('antes')
-
         if(index > 0){
             index--;
             updateCarrossel();
@@ -433,17 +414,14 @@
 
     nextTech.addEventListener('click', () => {
 
-        if(index < images.childElementCount - 1){
-
-            console.log('proximo')
-
+        if(index < hiddenElements){
             index++;
             updateCarrossel();
         }
     })
 
     function updateCarrossel(){
-        const position = -index * 100 + '%';
+        const position = -index * 12 + '%';
         images.style.transform = 'translateX('+position+')';
     }
 
