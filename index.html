@@ -310,62 +310,64 @@
                     <div class="projects-container">
 
                         <div class="projects-container__left">
-                            <button>
+                            <button id="prevProject">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </button>
                         </div>
 
-                        <div class="projects-container__content">
+                        <div class="cards-containter">
+                            <div id="projectsCarousel" class="projects-container__content">
 
-                            <div class="project-card">
-                                <a href="fumus-project.html">
-                                    <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
-                                    <span>
-                                        A Spotify clone
-                                    </span>
-                                </a>
+                                <div class="project-card">
+                                    <a href="fumus-project.html">
+                                        <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
+                                        <span>
+                                            A Spotify clone
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="project-card">
+                                    <a href="">
+                                        <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
+                                        <span>
+                                            A Spotify clone
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="project-card">
+                                    <a href="">
+                                        <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
+                                        <span>
+                                            A Spotify clone
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="project-card">
+                                    <a href="">
+                                        <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
+                                        <span>
+                                            A Spotify clone
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="project-card">
+                                    <a href="">
+                                        <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
+                                        <span>
+                                            A Spotify clone
+                                        </span>
+                                    </a>
+                                </div>
+
                             </div>
-
-                            <div class="project-card">
-                                <a href="">
-                                    <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
-                                    <span>
-                                        A Spotify clone
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="project-card">
-                                <a href="">
-                                    <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
-                                    <span>
-                                        A Spotify clone
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="project-card">
-                                <a href="">
-                                    <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
-                                    <span>
-                                        A Spotify clone
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="project-card">
-                                <a href="">
-                                    <img src="assets/img/projects_spotify_logo.png" alt="Spotify Clone">
-                                    <span>
-                                        A Spotify clone
-                                    </span>
-                                </a>
-                            </div>
-
                         </div>
 
                         <div class="projects-container__right">
-                            <button>
+                            <button id="nextProject">
                                 <i class="fa-solid fa-chevron-right"></i>
                             </button>
                         </div>
@@ -378,6 +380,8 @@
 </body>
 
 <script>
+
+    /* //Technologies carousel
 
     let hiddenElements = 0;
 
@@ -395,8 +399,6 @@
         });
     });
 
-
-    //Technologies carousel
     const carrossel = document.getElementById('technologies-carrossel');
     const images = document.getElementById('technologies-images');
     const nextTech = document.getElementById('next-technology');
@@ -423,8 +425,11 @@
     function updateCarrossel(){
         const position = -index * 12 + '%';
         images.style.transform = 'translateX('+position+')';
-    }
+    } */
 
 </script>
+
+<script src="education-experience.js"></script>
+<script src="my-projects.js"></script>
 
 </html>
