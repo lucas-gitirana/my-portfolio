@@ -1,0 +1,30 @@
+/* Smartphone (portrait) */
+@media screen and (max-width: 480px) {
+
+    .page{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 250px;
+    }
+
+    .page__header span{
+        font-size: 0.7em;
+    }
+
+    .page__header .page__header__number{
+        font-size: 1em;
+    }
+
+    .page__header .dev_logo{
+        height: 1.5em;
+    }
+
+    .cover-label{
+        display: none;
+    }
+
+    .page__cover img{
+        height: 190px;
+    }
+}
