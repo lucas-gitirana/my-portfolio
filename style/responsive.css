@@ -27,4 +27,79 @@
     .page__cover img{
         height: 190px;
     }
+
+
+    .explanation .explanation__answer .explanation__answer__text {
+        font-size: 1em;
+    }
+
+    .content-presentation{
+        display: block;
+    }
+
+    .content-presentation .presentation .presentation__title span {
+        font-size: 1.7em;
+    }
+
+    .content-presentation .presentation .presentation__links{
+        font-size: 0.5em;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .explanation{
+        margin-top: 20px;
+    }
+
+    .explanation .explanation__answer{
+        align-items: center;
+    }
+
+    .explanation .explanation__answer .explanation__answer__text{
+        width: auto;
+        text-align: justify;
+    }
+
+    .explanation .explanation__answer .explanation__answer__contents{
+        padding: 10px 0px;
+    }
+
+    .explanation .explanation__answer .explanation__answer__contents button{
+        font-size: 0.5em;
+        padding: 5px 10px;
+    }
+
+    .explanation .explanation__local{
+        font-size: 0.5em;
+        justify-content: center;
+    }
+
+    .explanation .explanation__local img{
+        height: 15px;
+    }
+
+    .cv{
+        padding: 10px 10px;
+    }
+
+    .cv .cv__title{
+        font-size: 1.5em;
+    }
+
+    .cv .cv__description{
+        font-size: 0.4em;
+        padding: 10px 4px;
+    }
+
+    .cv .cv__description ul{
+        margin-bottom: 0;
+    }
+
+    .cv .cv__description .cv__description__periods{
+        margin-right: 0;
+    }
+
+    .cv .cv__description .cv__description__jobs{
+        width: 386px;
+    }
 }
