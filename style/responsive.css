@@ -1,5 +1,5 @@
 /* Smartphone (portrait) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
     .page{
         display: flex;
@@ -101,5 +101,35 @@
 
     .cv .cv__description .cv__description__jobs{
         width: 386px;
+    }
+
+    .technologies .slider-container .slider-content-container .slider-content .slider-card .slider-card__picture img{
+        height: 40px;
+    }
+
+    .technologies .slider-container .slider-content-container .slider-content .slider-card .slider-card__description span{
+        font-size: 0.5em;
+    }
+
+    .technologies .slider-container button i{
+        font-size: 0.7em;
+    }
+
+    .technologies .slider-container .slider-content-container .slider-content .slider-card{
+        margin: 0;
+        padding: 2px;
+    }
+
+    .page .projects-container .projects-container__content{
+        width: 350px;
+    }
+
+    .page .projects-container .projects-container__content .project-card{
+        margin: 0 10px;
+    }
+
+    .page .projects-container .projects-container__content .project-card img{
+        height: 50px;
+        width: 50px;
     }
 }
