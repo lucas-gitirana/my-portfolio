@@ -121,15 +121,23 @@
     }
 
     .page .projects-container .projects-container__content{
-        width: 350px;
+        width: 225px;
+        padding: 35px 27px;
+        margin: 0;
+    }
+
+    .page .projects-container button i{
+        font-size: 2.5em;
     }
 
     .page .projects-container .projects-container__content .project-card{
-        margin: 0 10px;
+        margin: 0 25px;
+        flex: 0 0 125px;
+        border-radius: 8px;
     }
 
     .page .projects-container .projects-container__content .project-card img{
-        height: 50px;
-        width: 50px;
+        height: 125px;
+        width: 125px;
     }
 }
