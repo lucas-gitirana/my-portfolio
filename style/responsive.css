@@ -120,6 +120,23 @@
         padding: 2px;
     }
 
+    .page__background-title{
+        height: 490px;
+        justify-content: start;
+    }
+
+    .page__background-title span{
+        font-size: 5em;
+    }
+
+    .page__background-title .page__background-title__text-2{
+        margin-top: 186px;
+    }
+
+    .page__content .page__content__projects{
+        height: 75%;
+    }
+
     .page .projects-container .projects-container__content{
         width: 225px;
         padding: 35px 27px;
@@ -129,6 +146,7 @@
     .page .projects-container button i{
         font-size: 2.5em;
     }
+
 
     .page .projects-container .projects-container__content .project-card{
         margin: 0 25px;
